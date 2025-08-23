@@ -44,7 +44,7 @@ document.querySelector('form').addEventListener('submit',async (e)=>{
             e.preventDefault()
         }else{
             e.preventDefault()
-            await fetch('/submitval',{
+            await fetch('https://house-price-predictor-backend-m0r4.onrender.com/submitval',{
                 method:'POST',
                 headers: {
                     'Content-Type':'application/json'
