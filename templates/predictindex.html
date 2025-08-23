@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vinay Kumar Goyal">
+    <meta name="description" content="House Price Predictor designed to predict house prices">
+    <meta name="keywords" content="Price price house House predictor Predictor Vinay Kumar Goyal">
+    <title>House Price Predictor</title>
+    <link rel="stylesheet" href="/static/predict/style.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="navbar">
+                <ul class="navbarlist">
+                    <li id="home">Home</li>
+                    <li id="predict">Predict Price</li>
+                    <li id="contact">Contact Me</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main">
+            <div class="heading">House Predictor Model</div>
+            <div class="showbutton">
+                <button>Show The form</button>
+            </div>
+            <div class="form hidde">
+                <form action="" class="form" method="post">
+                    <div class="overallqual">
+                        <div class="label">
+                        <label for="overallqual">Enter the overall finish quality of house:- </label>
+                        </div>
+                        <div class="input">
+                        <input type="number" name="overallqual" id="overallqual" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="livingarea">
+                        <div class="label">
+                        <label for="livingarea">Enter the above ground living area of house (in sq feet) :- </label>
+                        </div>
+                        <div class="input">
+                        <input type="number" name="livingarea" id="livingarea" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="garagecap">
+                        <div class="label">
+                            <label for="garagecap">Enter the number of cars that can be kept in the garage :- </label>
+                        </div>
+                        <div class="input">
+                            <input type="number" name="garagecap" id="garagecap" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="garagear">
+                        <div class="label">
+                            <label for="garagear">Enter the total area of garage (in sq feet) :- </label>
+                        </div>
+                        <div class="input">
+                            <input type="number" name="garagear" id="garagear" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="basear">
+                        <div class="label">
+                            <label for="basear">Enter the area of basement (in sq feet) :- </label>
+                        </div>
+                        <div class="input">
+                            <input type="number" name="basear" id="basear" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="firstar">
+                        <div class="label">
+                            <label for="firstar">Enter the area of first floor (in sq feet) :- </label>
+                        </div>
+                        <div class="input">
+                            <input type="number" name="firstar" id="firstar" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="fullbath">
+                        <div class="label">
+                            <label for="fullbath">Enter the number of full bathrooms above grade :- </label>
+                        </div>
+                        <div class="input">
+                            <input type="number" name="fullbath" id="fullbath" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="totrooms">
+                        <div class="label">
+                            <label for="totrooms">Enter the number of total rooms above grade (excluding bathrooms) :- </label>
+                        </div>
+                        <div class="input">
+                            <input type="number" name="totrooms" id="totrooms" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="yrbuilt">
+                        <div class="label">
+                            <label for="yrbuilt">Enter the year in which the house was built :- </label>
+                        </div>
+                        <div class="input">
+                            <input type="number" name="yrbuilt" id="yrbuilt" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="rebuilt">
+                        <div class="label">
+                            <label for="rebuilt">Enter the year in which the house was remodeled (same as year built if no remodeling) :- </label>
+                        </div>
+                        <div class="input">
+                            <input type="number" name="rebuilt" id="rebuilt" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="btnsubmit">
+                        <button>Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="answer"></div>
+    </main>
+    <footer class="footer">
+        <div class="disclaimer">
+            <b>Disclaimer:- </b> Kindly note that it is not an official website. All data shown here is predicted and
+            not subjected to any organisation.
+        </div>
+        <div class="author">
+            <h3>Made By Vinay Kumar Goyal</h3>
+        </div>
+        <div class="copyright">
+            Copyright &copy; from 2025-2025
+        </div>
+    </footer>
+    <script src="/static/predict/script.js"></script>
+</body>
+</html>
