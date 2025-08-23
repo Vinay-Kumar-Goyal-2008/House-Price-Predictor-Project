@@ -7,14 +7,14 @@ setInterval(async ()=>{
     document.querySelector('.heading').style.color='black'
 },600)
 document.querySelector('#home').addEventListener('click',()=>{
-    window.location.href='/'
+    window.location.href='/mainindex.html'
 })
 
 document.querySelector('#contact').addEventListener('click',()=>{
     window.location.href='https://vinaykumargoyalportfolio.netlify.app'
 })
 document.querySelector('#predict').addEventListener('click',()=>{
-    window.location.href='/predict'
+    window.location.href='/predict/predictindex.html'
 })
 
 document.querySelector('.showbutton>button').addEventListener('click',()=>{

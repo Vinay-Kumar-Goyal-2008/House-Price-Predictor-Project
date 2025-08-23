@@ -15,5 +15,5 @@ document.querySelector('#contact').addEventListener('click',()=>{
     window.location.href='https://vinaykumargoyalportfolio.netlify.app'
 })
 document.querySelector('#predict').addEventListener('click',()=>{
-    window.location.href='/predictindex.html'
+    window.location.href='/predict/predictindex.html'
 })
