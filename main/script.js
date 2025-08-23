@@ -8,7 +8,7 @@ setInterval(async () => {
 }, 600);
 
 document.querySelector('#home').addEventListener('click',()=>{
-    window.location.href='/mainindex.html'
+    window.location.href='/index.html'
 })
 
 document.querySelector('#contact').addEventListener('click',()=>{

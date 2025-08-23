@@ -7,7 +7,7 @@ setInterval(async ()=>{
     document.querySelector('.heading').style.color='black'
 },600)
 document.querySelector('#home').addEventListener('click',()=>{
-    window.location.href='/mainindex.html'
+    window.location.href='/index.html'
 })
 
 document.querySelector('#contact').addEventListener('click',()=>{
