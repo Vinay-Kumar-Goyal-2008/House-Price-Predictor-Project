@@ -86,3 +86,16 @@ footer{
 .disclaimer{
     padding-bottom: 5vh;
 }
+@media only screen and (max-width:600px){
+    .main1{
+        flex-direction: column;
+    }
+    p,ol{
+        font-size: 2vh
+    }
+    .main>div{
+        padding: 3vh;
+        margin: 8vw;
+        margin-top: 10vh;
+    }
+}

@@ -166,3 +166,37 @@ input{
     text-align: center;
     border-radius: 30px;
 }
+
+@media only screen and (max-width:600px){
+    main>.main{
+        padding: 5vh;
+        margin: 8vw;
+        margin-top: 10vh;
+    }
+    .heading{
+        border-radius: 40px;
+    }
+    label{
+        font-size: 2vh;
+    }
+    form div{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 3vh;
+        padding-top: 3vh;
+    }
+    .input{
+        text-align: center;
+        width: 100%;
+    }
+    input{
+        height: 3vh;
+    }
+    .answer{
+        align-self: center;
+        justify-self: center;
+        font-size: 3vh;
+    }
+}
