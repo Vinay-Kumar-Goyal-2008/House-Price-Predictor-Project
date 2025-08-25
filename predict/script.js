@@ -24,21 +24,15 @@ document.querySelector('.showbutton>button').addEventListener('click',()=>{
 })
 
 document.querySelector('form').addEventListener('submit',async (e)=>{
-    l=['overallqual','livingarea','garagecap','garagear','basear','firstar','fullbath','totrooms','yrbuilt','rebuilt']
-    let overallqual=document.querySelector('#overallqual').value
+    l=['livingarea','basear','firstar','yrbuilt','rebuilt']
     let livingarea=document.querySelector('#livingarea').value
-    let garagecap=document.querySelector('#garagecap').value
-    let garagear=document.querySelector('#garagear').value
     let basear=document.querySelector('#basear').value
     let firstar=document.querySelector('#firstar').value
-    let fullbath=document.querySelector('#fullbath').value
-    let totrooms=document.querySelector('#totrooms').value
     let yrbuilt=document.querySelector('#yrbuilt').value
     let rebuilt=document.querySelector('#rebuilt').value
     l.forEach(element => {
         document.querySelector(`#${element}`).disabled=true
     });
-    if (overallqual>=1 && overallqual<=10){
         if (rebuilt<yrbuilt){
             alert('Remodeling Year should not be less than built year')
             e.preventDefault()
@@ -50,14 +44,9 @@ document.querySelector('form').addEventListener('submit',async (e)=>{
                     'Content-Type':'application/json'
                 },
                 body:JSON.stringify({
-                    overallqual:overallqual,
                     livingarea:livingarea,
-                    garagecap:garagecap,
-                    garagear:garagear,
                     basear:basear,
                     firstar:firstar,
-                    fullbath:fullbath,
-                    totrooms:totrooms,
                     yrbuilt:yrbuilt,
                     rebuilt:rebuilt
                 })
@@ -77,7 +66,4 @@ if ( data['status']==200){
             })
             
         }
-    }else{
-        alert('Please Enter correct overall finish quality')
-    }
 })
